@@ -1,45 +1,91 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment Solution for module 3</title>
-    <link rel="stylesheet" href="module3-solution/css/bootstrap.min.css">
-    <link rel="stylesheet" href="module3-solution/css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  </head>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="module3-solution/css/stylesheet.css">
+	
+	<title>module3</title>
+</head>
 <body>
-  <header>
+    <header class="nav-header">
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img"></div>
-          </a>
-
           <div class="navbar-brand">
-            <a href="index.html"><h1>Food, LLC</h1></a>
+            <p class="nav-brand">Food, LLC</p>
           </div>
-               <h1>Our Menu</h1>
-          <div class="container"> </div>
-                 <div class="chicken">
-                   <span>Chicken</span>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                </div>
 
-
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="true">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+            <li class="text-center">
+              <a href="#c"><p class="i">Chicken</p></a>
+              <hr class="visible-xs">
+            </li>            
+            <li class="text-center beef-i">
+              <a href="#b"><p class="i">Beef</p></a>
+              <hr class="visible-xs">
+            </li>
+            <li class="text-center sushi-i">
+              <a href="#s"><p class="i">Sushi</p></a>
+            </li>
+          </ul> 
         </div>
       </div>
     </nav>
+  	</header>
 
-  </header>
+	<h1 class="text-center">Our Menu</h1>
 
+	<div class="row container container-fluid">
+	<div class="col-md-12 col-sm-12 col-xs-12" id="c">
+		<section>
+		<div id="ch">
+			Coffee
+		</div>
+		<p>
+Chicken
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ligula nisi, fermentum sed neque a, mollis sagittis quam. Vivamus venenatis augue id justo consequat, in varius nisl laoreet. Sed imperdiet, lectus vel ullamcorper condimentum, nisi leo eleifend nunc, in suscipit dui velit sit amet ex. Ut eu orci felis. In fringilla placerat tincidunt. Fusce dignissim lectus quis rutrum ultricies. Ut at libero mollis, elementum dolor a, hendrerit augue. Donec auctor sit amet massa ut luctus.
+      </p>			
+		</section>
+	</div>
+	<div class="col-md-12 col-sm-12 col-xs-12" id="b">
+		<section>
+		<div id="be">
+			sushi
+		</div>
+		<p>
+    Donec ut risus ut tellus tincidunt pellentesque nec vitae turpis. Maecenas laoreet mauris a diam tempor, a elementum ante fringilla. Integer quis ornare sapien. Maecenas ut massa eu ligula finibus viverra. Vestibulum maximus viverra lacinia. Curabitur vel ligula id erat blandit pharetra a quis mauris. Nunc nisi ligula, pharetra in libero luctus, semper tincidunt turpis. Pellentesque suscipit odio eget risus laoreet iaculis. Praesent congue elit ut risus ultrices suscipit. Vivamus at congue ligula. Nunc congue eros eu odio condimentum mattis.
+    </p>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+		</section>
+	</div>
+	<div class="col-md-12 col-sm-12 col-xs-12" id="s">
+		<section>
+		<div id="su">
+			Beef
+		</div>
+		<p>
+      Cras vitae sapien tempor, efficitur turpis eu, egestas orci. Nam dignissim dapibus ipsum, sit amet facilisis odio faucibus ut. Sed nec vehicula justo, id euismod nisi. Vestibulum vehicula dapibus dui id tincidunt. Sed ipsum diam, iaculis vitae dignissim id, varius eleifend magna. Pellentesque euismod ipsum at tincidunt sollicitudin. Vestibulum eu lectus a ligula tempor luctus.
+    </p>
+			
+		</section>
+	</div>
+	</div>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/script.js"></script>
 </body>
 </html>
